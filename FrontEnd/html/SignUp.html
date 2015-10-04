@@ -2,6 +2,7 @@
 <meta charset = UTF = "8">
 <html>
 	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<title>Login Page</title>
 	   <link rel="stylesheet" type="text/css" href="StyleSheet.css">
 	</head>
@@ -48,13 +49,13 @@
 				<br>
 				What Illness(es) Do You Suffer From?
 				<br>
-				<div id="divName">
-					<input type="text" name="Illness[]">
-				</div>
-					<input type="button" value="Add Input" onClick="addInput('divName');">
-				<hr>
-
-
+				<div class="1"><input type="text" size="30" maxlength="30" class="1"/><button class="1">x</button><br /></div>
+				<div class="2"><input type="text" size="30" maxlength="30" class="2"/><button class="2">x</button><br /></div>
+				<div class="3"><input type="text" size="30" maxlength="30" class="3"><button class="3">x</button><br /></div>
+				<div id="divName" class="4">
+					</div><br />
+				<input type="button" value="Add Input" onClick="addInput('divName');">
+			<hr>
 
 				Tell Others About Yourslef
 				<br>
@@ -68,13 +69,6 @@
 			</form>
 		</div>
 	</body>
-	<script type = "text/javascript">
-	function addInput(divName){
-		var newdiv = document.createElement("div");
-		newdiv.innerHTML = " <input type ='text' name='addInputs[]'> ";
-		document.getElementById('divName').appendChild(newdiv);
-	}
-
-	</script>
+	<script src="../javascript/signUp.js"></script>
 
 </html>
